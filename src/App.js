@@ -16,7 +16,7 @@ class App extends Component {
               title="Inline Frame Example"
               width="1040"
               height="720"
-              src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/goto/KYzhd_YGk">
+              src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/dashboard/snapshot/Zd6Ge2VxhRjVPwNGfiiFavlHgp5mZnOd">
           </iframe>
           </p>
           <a
