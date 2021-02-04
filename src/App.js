@@ -11,9 +11,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+          <iframe id="inlineFrameExample"
+              title="Inline Frame Example"
+              width="1040"
+              height="720"
+              src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/d/BXvoh8LGz/test-dashboard?orgId=1&refresh=5s">
+          </iframe>
           </p>
           <a
             className="App-link"
