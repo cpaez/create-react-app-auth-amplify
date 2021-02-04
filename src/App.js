@@ -12,12 +12,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>
-          <iframe id="inlineFrameExample"
-              title="Inline Frame Example"
-              width="1040"
-              height="720"
-              src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/dashboard/snapshot/Zd6Ge2VxhRjVPwNGfiiFavlHgp5mZnOd">
-          </iframe>
+          <iframe src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/d-solo/BXvoh8LGz/test-dashboard?orgId=1&refresh=5s&from=1612456659278&to=1612478259278&panelId=6" width="450" height="200" frameborder="0"></iframe>
           </p>
           <a
             className="App-link"
