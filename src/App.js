@@ -7,6 +7,26 @@ import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 
 class App extends Component {
+
+  state = {
+    scores: []
+  }
+
+  componentDidMount() {
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ "data": [10844,8127,6210] })
+    };
+    fetch('https://a0ouvefenc.execute-api.us-east-1.amazonaws.com/TEST/detectanomaly', requestOptions)
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ scores: data })
+      console.log(data)
+    })
+    .catch(console.log)
+  }
+
   render() {
     return (
       <div className="App">
