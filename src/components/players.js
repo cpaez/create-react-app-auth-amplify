@@ -4,7 +4,7 @@ import React from 'react'
       return (
         <div>
           <center><h1>Players List</h1></center>
-          {contacts.map((player) => (
+          {players.map((player) => (
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Messi</h5>
