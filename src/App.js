@@ -10,7 +10,7 @@ Amplify.configure(aws_exports);
 class App extends Component {
 
   state = {
-    scores: []
+    players: []
   }
 
   componentDidMount() {
@@ -22,7 +22,7 @@ class App extends Component {
     fetch('https://a0ouvefenc.execute-api.us-east-1.amazonaws.com/TEST/predictanomaly', requestOptions)
     .then(res => res.json())
     .then((data) => {
-      this.setState({ scores: data })
+      this.setState({ players: data })
       console.log(data)
     })
     .catch(console.log)
