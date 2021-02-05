@@ -7,8 +7,7 @@ import React from 'react'
           {players.map((player) => (
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Messi</h5>
-                <h6 class="card-subtitle mb-2 text-muted">10</h6>
+                <h5 class="card-title">Messi (10)</h5>
                 <p class="card-text">Anomaly score: {player.score}</p>
               </div>
             </div>
