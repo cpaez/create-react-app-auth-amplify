@@ -9,7 +9,7 @@ import React from 'react'
               <div class="card-body">
                 <h5 class="card-title">Messi</h5>
                 <h6 class="card-subtitle mb-2 text-muted">10</h6>
-                <p class="card-text">{player.score}</p>
+                <p class="card-text">Anomaly score: {player.score}</p>
               </div>
             </div>
           ))}
