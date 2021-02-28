@@ -16,8 +16,7 @@ class App extends Component {
   componentDidMount() {
     const requestOptions = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ "data": [10] })
+      headers: { 'Content-Type': 'application/json' }
     };
     fetch('https://a0ouvefenc.execute-api.us-east-1.amazonaws.com/TEST/predictanomaly', requestOptions)
     .then(res => res.json())
