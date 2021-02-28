@@ -8,7 +8,7 @@ import React from 'react'
             <div class="card">
               <div class="card-body">
                 <p class="card-text">Anomaly score: {player.score}</p>
-                <div style="color: red">Detected abnormal player metrics, minute: {player.score}</div>
+                <div style="color: red">Detected abnormal player metrics, minute: </div>
               </div>
             </div>
           ))}
