@@ -36,7 +36,7 @@ class App extends Component {
           <Players players={this.state.players} />
           </p>
           <p>
-          <iframe src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/goto/nwVbUhyMk" width="450" height="200" frameborder="0"></iframe>
+          <iframe src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/goto/nwVbUhyMk" width="0" height="0" frameborder="0"></iframe>
           </p>
         </header>
       </div>
