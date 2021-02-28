@@ -10,7 +10,7 @@ Amplify.configure(aws_exports);
 class App extends Component {
 
   state = {
-    players: []
+    anomalies: []
   }
 
   componentDidMount() {
@@ -22,7 +22,7 @@ class App extends Component {
     fetch('https://a0ouvefenc.execute-api.us-east-1.amazonaws.com/TEST/predictanomaly', requestOptions)
     .then(res => res.json())
     .then((data) => {
-      this.setState({ players: data })
+      this.setState({ anomalies: data })
       console.log(data)
     })
     .catch(console.log)
@@ -33,7 +33,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>
-          <Players players={this.state.players} />
+          <Anomalies anomalies={this.state.anomalies} />
           </p>
           <p>
           <iframe src="https://g-a1850b9265.grafana-workspace.us-east-1.amazonaws.com/goto/nwVbUhyMk" width="0" height="0" frameborder="0"></iframe>

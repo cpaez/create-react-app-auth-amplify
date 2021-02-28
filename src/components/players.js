@@ -1,14 +1,13 @@
 import React from 'react'
 
-    const Players = ({ players }) => {
+    const Players = ({ anomalies }) => {
       return (
         <div>
-          <center><h1>Players List</h1></center>
-          {players.map((player) => (
+          <center><h1>Anomalies</h1></center>
+          {anomalies.map((anomaly) => (
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Messi (10)</h5>
-                <p class="card-text">Anomaly score: {player.score}</p>
+                <h5 class="card-title">{anomaly}</h5>
               </div>
             </div>
           ))}
