@@ -1,6 +1,6 @@
 import React from 'react'
 
-    const Players = ({ anomalies }) => {
+    const Anomalies = ({ anomalies }) => {
       return (
         <div>
           <center><h1>Anomalies</h1></center>
@@ -15,4 +15,4 @@ import React from 'react'
       )
     };
 
-    export default Players
+    export default Anomalies
