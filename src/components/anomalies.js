@@ -4,7 +4,7 @@ import React from 'react'
       return (
         <div class="card-text">
           {anomalies.map((anomaly) => (
-              {anomaly}
+              <div class="card-text">{anomaly}</div>
           ))}
         </div>
       )
