@@ -21,7 +21,9 @@ class App extends Component {
     fetch('https://a0ouvefenc.execute-api.us-east-1.amazonaws.com/TEST/predictanomaly', requestOptions)
     .then(res => res.json())
     .then((data) => {
-      this.setState({ anomalies: data })
+      if (anomalies.count == 1) {
+        this.setState({ anomalies: data })
+      }
       console.log(data)
     })
     .catch(console.log)
