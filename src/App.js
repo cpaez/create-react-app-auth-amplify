@@ -30,17 +30,28 @@ class App extends Component {
   componentDidMount() {
     this.getData();
 
-    setInterval(this.getData, 30000); // runs every 30 seconds.
+    setInterval(this.getData, 10000); // runs every 30 seconds.
   }
 
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <Anomalies anomalies={this.state.anomalies} />
-        </header>
-      </div>
-    );
+    if (this.state.anomalies.count > 0) {
+      return (
+        <div className="App">
+          <header className="App-header">
+              <Anomalies anomalies={this.state.anomalies} />
+          </header>
+        </div>
+      );
+    }
+    else {
+      return (
+        <div className="App">
+          <header className="App-header">
+              loading data...
+          </header>
+        </div>
+      );
+    }
   }
 }
 
