@@ -2,13 +2,9 @@ import React from 'react'
 
     const Anomalies = ({ anomalies }) => {
       return (
-        <div>
+        <div class="card-text">
           {anomalies.map((anomaly) => (
-            <div class="card">
-              <div class="card-body">
-                <div class="card-text">{anomaly}</div>
-              </div>
-            </div>
+              {anomaly}
           ))}
         </div>
       )
