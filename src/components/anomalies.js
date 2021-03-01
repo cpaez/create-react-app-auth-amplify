@@ -4,7 +4,7 @@ import React from 'react'
       return (
         <div class="card-text">
           {anomalies.map((anomaly) => (
-              <div style="color: red; font-size: small">{anomaly}</div>
+              <div style="color: red; font-size: 12px">{anomaly}</div>
           ))}
         </div>
       )
