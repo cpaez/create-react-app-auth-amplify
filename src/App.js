@@ -21,9 +21,7 @@ class App extends Component {
     fetch('https://a0ouvefenc.execute-api.us-east-1.amazonaws.com/TEST/predictanomaly', requestOptions)
     .then(res => res.json())
     .then((data) => {
-      if (anomalies.count == 1) {
-        this.setState({ anomalies: data })
-      }
+      this.setState({ anomalies: data })
       console.log(data)
     })
     .catch(console.log)
@@ -32,7 +30,7 @@ class App extends Component {
   componentDidMount() {
     this.getData();
 
-    setInterval(this.getData, 10000); // runs every 30 seconds.
+    setInterval(this.getData, 5000); // runs every 30 seconds.
   }
 
   render() {
