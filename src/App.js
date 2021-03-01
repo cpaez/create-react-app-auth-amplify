@@ -34,24 +34,13 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.anomalies.count > 0) {
-      return (
-        <div className="App">
-          <header className="App-header">
-              <Anomalies anomalies={this.state.anomalies} />
-          </header>
-        </div>
-      );
-    }
-    else {
-      return (
-        <div className="App">
-          <header className="App-header">
-              loading data...
-          </header>
-        </div>
-      );
-    }
+    return (
+      <div className="App">
+        <header className="App-header">
+            <Anomalies anomalies={this.state.anomalies} />
+        </header>
+      </div>
+    );
   }
 }
 
