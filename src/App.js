@@ -13,7 +13,7 @@ class App extends Component {
     anomalies: []
   }
 
-  componentDidMount() {
+  getData = () => {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' }
@@ -25,6 +25,12 @@ class App extends Component {
       console.log(data)
     })
     .catch(console.log)
+  }
+
+  componentDidMount() {
+    this.getData();
+
+    setInterval(this.getData, 5000); // runs every 5 seconds.
   }
 
   render() {
